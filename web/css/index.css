@@ -1,0 +1,54 @@
+html{
+font-family: 'Source Sans Pro', sans-serif;
+}
+
+.titulo-h3{
+font-weight:400;
+}
+
+.color-celeste{
+color: #00aeef;	
+}
+
+.sabado{
+width:100%;
+postion:relative;
+float:left;
+margin-bottom:10px;
+}
+
+.sabado>label{
+width:100%;
+position:relative;
+float:left;
+margin-bottom:10px;
+}
+
+.sabado>input{
+width:90%;
+padding-left:10px;
+padding-top:10px;
+padding-bottom:10px;
+padding-right:10px;
+}
+
+.columna{
+width:350px;
+}
+
+.boton{
+font-family: 'Source Sans Pro', sans-serif;
+font-size:16px;
+color: #666;
+margin-top:10px;
+padding-left: 122px;
+padding-right: 122px;
+padding-top:10px;
+padding-bottom:10px;
+}
+
+.boton:hover{
+cursor:pointer;
+background-color:black;
+color:white;
+}

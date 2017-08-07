@@ -1,0 +1,79 @@
+.navbar-inverse{
+border-bottom: 2px #f68933 solid;
+background: transparent;
+}
+
+.navbar-brand {
+height: auto;
+padding-bottom: 5px;
+padding-top: 5px;
+}
+
+@media (min-width: 1200px){
+    .container {
+    width: 1280px;
+    }
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+  color: #f68933;
+  background-color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: #343434;
+}
+
+.nav>li>a:hover{
+color: #f68933 !important;
+}
+
+.navbar-nav>li>a>i{
+margin-right: 10px;
+font-size: 20px;
+}
+
+#navbar>ul{
+margin-top: 10px;
+margin-left: 20px;
+}
+
+#span-salir{
+margin-top: 20px;    
+position: relative;
+float: right;
+font-size: 20px;
+}
+
+#seccion-body{
+top: 80px;
+position: relative;
+float: left;
+}
+
+#seccion-body>.container{
+margin-left: 40px;    
+}
+
+.form-group>label{
+font-weight: 100; 
+}
+
+.titulo{
+font-size: 24px;
+}
+
+#mensajeControl{
+      margin-top: 20px;
+}
+
+.boton{
+margin-top: 25px;
+}
+
+@media (min-width: 768px){
+.navbar-nav {
+  float: left;
+  margin: 0;
+}
+}

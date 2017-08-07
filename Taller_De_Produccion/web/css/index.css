@@ -1,0 +1,34 @@
+
+     
+        .campo{
+            border: outset 6px #6F7EEB;
+            font-size: 12px;
+            padding: 5px;
+            margin-bottom: 10px;
+            width: 150px;
+        }
+ 
+        .boton{
+            background: black;
+            border: solid 0;
+            color: #fff;
+            padding: 10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+ 
+        .errores{
+            -webkit-boxshadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            background: red;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            color: #fff;
+            display: none;
+            font-size: 14px;
+            margin-top: -43px;
+            margin-left: 395px;
+
+            padding: 10px;
+            position: absolute;
+        }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            var objecto = {
+                nombre : "Luis",
+                apellido : "Cueva",
+                pais : "Perú"
+            }
+            console.log("objecto JS", objecto); // es un objeto
+            console.log( typeof objecto);
+            console.log("objecto JSON", JSON.stringify(objecto)); //Solo texto
+            console.log( typeof JSON.stringify(objecto));
+            var string = JSON.stringify(objecto);
+            console.log("de texto a objeto",JSON.parse(string));
+            console.log(JSON.parse(string).nombre);
+            
+            var lista = 
+             "[\n" + [
+                '{"nombre":"Luis" , "apellido":"Cueva"}',
+                '{"nombre":"Alex","apellido":"Cueva"}',
+                '{"nombre":"Carolina","apellido":"Rojas"}',
+                '{"nombre":"pepita","apellido":"Juares"}',
+                '{"nombre":"Alba","apellido":"Fuentes"}',
+                '{"nombre":"Camila","apellido":"Rico"}'        
+             ].join(",\n") + "\n]";
+            console.log( lista   );
+            var nlista = JSON.parse(lista);
+            console.log(nlista);
+            
+            function filtro (array,prueba){
+                var encontrado = [];
+                for(var i = 0;i<array.length;i++){
+                    if (prueba(array[i]))
+                        encontrado.push(array[i])
+                }
+                return encontrado;
+            }
+            console.log(filtro(nlista,function (jugador){
+                return jugador.nombre == "Luis";
+            }));
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
