@@ -28,8 +28,8 @@ public class Login extends HttpServlet {
             HttpSession ses = request.getSession(true);   
             
             String usuario = request.getParameter("usuario");            
-            String password = request.getParameter("password");              
-                        
+            String password = request.getParameter("password");
+                  
 
             AdministradorDAO dao = new AdministradorDAO();
             Administrador admin = dao.loginAdmin(usuario,password);             

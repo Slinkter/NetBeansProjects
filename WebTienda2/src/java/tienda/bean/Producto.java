@@ -6,20 +6,20 @@ public class Producto {
     
     private int idProducto;
     private String nomProducto;
-    private float precio;
+    private int precio;
 
-    public Producto(int idProducto, String nomProducto, float precio) {
+    public Producto() {
+    }
+
+    public Producto(String nomProducto, int precio) {
+        this.nomProducto = nomProducto;
+        this.precio = precio;
+    }
+
+    public Producto(int idProducto, String nomProducto, int precio) {
         this.idProducto = idProducto;
         this.nomProducto = nomProducto;
         this.precio = precio;
-    }
-
-    public Producto(String nomProducto, float precio) {
-        this.nomProducto = nomProducto;
-        this.precio = precio;
-    }
-
-    public Producto() {
     }
 
     public int getIdProducto() {
@@ -38,14 +38,15 @@ public class Producto {
         this.nomProducto = nomProducto;
     }
 
-    public float getPrecio() {
+    public int getPrecio() {
         return precio;
     }
 
-    public void setPrecio(float precio) {
+    public void setPrecio(int precio) {
         this.precio = precio;
     }
-    
+
+   
     
             
     

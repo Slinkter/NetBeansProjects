@@ -13,7 +13,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Bienvenido <%= request.getAttribute("nombreAdmin")%> a  Gestion de  Clientes</h1>
+        <h1>Bienvenido <%= request.getAttribute("precio")%> a  Gestion de  Clientes</h1>
         
         <div class="container">
             <a href="login2" class="btn btn-primary">Listado</a>

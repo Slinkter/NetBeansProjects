@@ -66,7 +66,7 @@ public class AdministradorDAO {
                 Administrador admin = null;		
 		PreparedStatement pstm = null;
 		ResultSet rs = null;
-		String query = "SELECT * FROM vidrieria.tb_admin where usuario=? and  password = ? ";		
+		String query = "SELECT * FROM vidrieria.Administrador where nombre = ? and  contraseña = ? ";		
 		
 		try{
 			Connection con = getConnection();			
@@ -75,8 +75,8 @@ public class AdministradorDAO {
                         pstm.setString(2, contraseña);
 			rs = pstm.executeQuery();	
 			if(rs.first()){
-				String nombre = rs.getString("usuario");//base de datos
-				String password = rs.getString("password");//base de datos
+				String nombre = rs.getString("nombre");//base de datos
+				String password = rs.getString("contraseña");//base de datos
 				admin = new Administrador(nombre, password);				
 			}	
 			con.close();				

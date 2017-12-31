@@ -36,8 +36,7 @@ public class login2 extends HttpServlet {
         
         HttpSession ses = request.getSession(true);
         ClienteDAO dao =  new ClienteDAO();
-        List<Cliente> listado = dao.getAllCliente();// <-- Lista 
-        System.out.println(listado + "<---------");
+        List<Cliente> listado = dao.getAllCliente();      
         ses.setAttribute("listado", listado);
         String pagina = "/Admin2.jsp";
         RequestDispatcher rd = request.getRequestDispatcher(pagina);

@@ -6,39 +6,41 @@ public class Cliente {
     private int id_cliente;
     private String nombre;
     private String apellido;
+    private String correo;
+    private String telefono;
     private String direccion;
     private String distrito;
-    private String telefono;
-    private String correo;
-    private float cuenta;
-    private String estado;
+    private String estado;//<-- borra estado - observacion (100)?
         
           
     public Cliente() {
     }
 
-    public Cliente(int id_cliente, String nombre, String apellido, String direccion, String distrito, String telefono, String correo, float cuenta, String estado) {
+    public Cliente(int id_cliente, String nombre, String apellido, String direccion, String distrito, String telefono, String correo, String estado) {
         this.id_cliente = id_cliente;
         this.nombre = nombre;
         this.apellido = apellido;
         this.direccion = direccion;
         this.distrito = distrito;
         this.telefono = telefono;
-        this.correo = correo;
-        this.cuenta = cuenta;
+        this.correo = correo;        
         this.estado = estado;
     }
 
-    public Cliente(String nombre, String apellido, String direccion, String distrito, String telefono, String correo, float cuenta, String estado) {
+    public Cliente(String nombre, String apellido, String direccion, String distrito, String telefono, String correo, String estado) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.direccion = direccion;
         this.distrito = distrito;
         this.telefono = telefono;
-        this.correo = correo;
-        this.cuenta = cuenta;
+        this.correo = correo;        
         this.estado = estado;
     }    
+    
+    
+    
+    
+    
 
     public int getId_cliente() {
         return id_cliente;
@@ -105,15 +107,7 @@ public class Cliente {
         this.correo = correo;
     }
 
-    public float getCuenta() {
-        return cuenta;
-    }
-
-    public void setCuenta(float cuenta) {
-        this.cuenta = cuenta;
-    }
-
-    
+  
     
     
     

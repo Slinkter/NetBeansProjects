@@ -12,6 +12,14 @@
         <servlet-name>cliente</servlet-name>
         <servlet-class>tienda.servlet.cliente</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Presupuesto</servlet-name>
+        <servlet-class>tienda.servlet.Presupuesto</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>prueba2</servlet-name>
+        <servlet-class>tienda.servlet.prueba2</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Login</servlet-name>
         <url-pattern>/Login</url-pattern>
@@ -23,6 +31,14 @@
     <servlet-mapping>
         <servlet-name>cliente</servlet-name>
         <url-pattern>/cliente</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Presupuesto</servlet-name>
+        <url-pattern>/Presupuesto</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>prueba2</servlet-name>
+        <url-pattern>/prueba2</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

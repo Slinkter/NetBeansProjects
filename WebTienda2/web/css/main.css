@@ -118,3 +118,12 @@ a,.azul{
 		width: 100% !important;
 		height: 100% !important;
 }
+
+
+.icon-design:before{
+    content: "\e610";
+    color:#f16822;
+    text-align: center;
+    display: block;
+    width:100px;
+}

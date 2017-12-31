@@ -52,8 +52,7 @@ public class cliente extends HttpServlet {
                 c2.setDireccion(request.getParameter("direccion"));
                 c2.setDistrito(request.getParameter("districto"));
                 c2.setTelefono(request.getParameter("telefono"));
-                c2.setCorreo(request.getParameter("correo"));
-                c2.setCuenta(Float.parseFloat(request.getParameter("cuenta")));
+                c2.setCorreo(request.getParameter("correo"));                
                 c2.setEstado(request.getParameter("estdo"));               
                 dao.insertarCliente(c2);
                 response.sendRedirect("login2");

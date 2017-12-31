@@ -36,7 +36,9 @@
                          <td>Direccion</td>
                          <td>Correo</td>
                          <td>Telefono</td>
-                         <td>Estado</td>
+                         <td>Visita</td>
+                         <td>Cuenta</td>
+                         <td>Cuenta</td>
                          <td>Cuenta</td>
 
                      </tr>
@@ -50,11 +52,10 @@
                             <td>${x.direccion}</td>
                             <td>${x.correo}</td>
                             <td>${x.telefono}</td>
-                            <td>${x.estado}</td>
-                            <td>${x.cuenta}</td>
-                            <td><a href="cliente?accion=CONSULTA&id=${x.id_cliente}"> <span class="glyphicon glyphicon-eye-open center-text" aria-hidden="true"></span></a></td>
-                            <td><a href="cliente?accion=EDITAR&id=${x.id_cliente}"> <span class="glyphicon glyphicon-pencil center-text " aria-hidden="true"></span></a></td>
-                            <td><a href="cliente?accion=ELIMINAR&id=${x.id_cliente}"> <span class="glyphicon glyphicon-trash center-text" aria-hidden="true"></span></a></td>
+                            <td>${x.estado}</td>                            
+                            <td><a href="cliente?accion=CONSULTA&id=${x.id_cliente}"> <span class="col-md-push-4 glyphicon glyphicon-eye-open  " ></span></a></td>
+                            <td><a href="cliente?accion=EDITAR&id=${x.id_cliente}"  > <span class="col-md-push-4 glyphicon glyphicon-pencil    " ></span></a></td>
+                            <td><a href="cliente?accion=ELIMINAR&id=${x.id_cliente}"> <span class="col-md-push-4 glyphicon glyphicon-trash     " ></span></a></td>
                         </tr>                        
                     </c:forEach>     
             </table>

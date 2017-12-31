@@ -19,19 +19,19 @@ public class ClienteDAO {
 
 	public Cliente  insertarCliente(Cliente cli){	
 		
-		int id_cliente = cli.getId_cliente();
-		String nombre = cli.getNombre();                 
-		String apellido = cli.getApellido();
-                String direccion =  cli.getDireccion();
-                String distrito = cli.getDistrito();
-                String telefono = cli.getTelefono();
-                String correo = cli.getCorreo();
-                float cuenta = cli.getCuenta();
-		String estado = cli.getEstado();   
+		int id_cliente   = cli.getId_cliente();
+		String nombre    = cli.getNombre();                 
+		String apellido  = cli.getApellido();
+                String correo    = cli.getCorreo();
+                String telefono  = cli.getTelefono();
+                String direccion = cli.getDireccion();
+                String distrito  = cli.getDistrito();  
+		String estado    = cli.getEstado();
+                
 		Connection conexion = null;
                 PreparedStatement ps = null ;
 		
-		String sql = "INSERT INTO `vidrieria`.`tb_cliente` (`estado`, `direccion`, `nombre`, `apellido`, `correo`, `telefono`, `distrito`, `cuenta`) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+		String sql = "INSERT INTO `vidrieria`.`tb_cliente` (`nombre`, `apellido`, `correo`, `telefono`, `direccion`, `distrito`, `estado`) VALUES (?,?,?,?,?,?,?);";
 		try{
 			
                         conexion = getConnection();
@@ -39,16 +39,13 @@ public class ClienteDAO {
                         ps = conexion.prepareStatement(sql,new String[] { "ID" });
                         
                         System.out.println(ps+ "dentro de try");
-                       
-                        ps.setString(3,nombre);
-                        ps.setString(4,apellido);
-                        ps.setString(2,direccion);
-                        ps.setString(7,distrito );
-                        ps.setString(6,telefono );
-                        ps.setString(5,correo );
-                        ps.setFloat(8,cuenta );
-                        ps.setString(1,estado );                       
-                        
+                        ps.setString(1,nombre ); 
+                        ps.setString(2,apellido);
+                        ps.setString(3,correo);
+                        ps.setString(4,telefono);
+                        ps.setString(5,direccion );
+                        ps.setString(6,distrito );
+                        ps.setString(7,estado);    
                         ps.executeUpdate();
                         ResultSet rs = ps.getGeneratedKeys();
                         rs.next();
@@ -67,13 +64,12 @@ public class ClienteDAO {
 	return cli;
 	}       
 	
-	public Cliente getCliente(int id_cliente){
-		
+	public Cliente getCliente(int id_cliente){		
         Cliente c4 = null;
         PreparedStatement pstm = null;
         ResultSet rs = null;
         Connection con = null;
-        String query = "SELECT idCliente,nombre,apellido,telefono,direccion,distrito,estado,cuenta FROM vidrieria.tb_cliente WHERE idCliente = ?";
+        String query = "SELECT id_cliente,nombre,apellido,correo,telefono,direccion,distrito,estado FROM vidrieria.tb_cliente WHERE idCliente = ?";
 
         try{
                 con = getConnection();
@@ -85,26 +81,23 @@ public class ClienteDAO {
                     c4.setId_cliente(rs.getInt("idCliente"));
                     c4.setNombre(rs.getString("nombre"));
                     c4.setApellido(rs.getString("apellido"));
+                    c4.setCorreo(rs.getString("correo"));
                     c4.setTelefono(rs.getString("telefono"));
                     c4.setDireccion(rs.getString("direccion"));
                     c4.setDistrito(rs.getString("distrito"));
-                    c4.setEstado(rs.getString("estado"));
-                    c4.setCuenta(rs.getFloat("cuenta"));
+                    c4.setEstado(rs.getString("estado"));                    
                 }               
                 con.close();
 
         }catch(Exception e){
                 e.printStackTrace();
-
         }
-
-        return c4;
-	
+        return c4;	
 	}
         
     public boolean remove (Cliente cliente ){
     Connection conexion = null ;
-    String sql =  "delete from `vidrieria`.`tb_cliente` where idCliente=? ";
+    String sql =  "delete from `vidrieria`.`tb_cliente` where id_cliente=? ";
     try {
         conexion = getConnection();
         PreparedStatement ps = conexion.prepareStatement(sql);
@@ -128,26 +121,23 @@ public class ClienteDAO {
 
     List<Cliente> listaClientes = new ArrayList<>();				 
 
-    String sql = "SELECT idCliente,nombre,apellido,direccion,distrito,telefono,correo,cuenta,estado FROM vidrieria.tb_cliente";
+    String sql = "SELECT id_cliente,nombre,apellido,correo,telefono,direccion,distrito,estado FROM vidrieria.tb_cliente";
     try{
             Connection con = getConnection();			
             Statement s =  con.createStatement();
             ResultSet rs =  s.executeQuery(sql); 
             while(rs.next()){
                     Cliente cliente = new Cliente();
-                    cliente.setId_cliente(rs.getInt("idCliente"));
+                    cliente.setId_cliente(rs.getInt("id_cliente"));
                     cliente.setNombre(rs.getString("nombre"));
                     cliente.setApellido(rs.getString("apellido"));
-                    cliente.setDireccion(rs.getString("direccion"));
-                    cliente.setDistrito(rs.getString("distrito"));
+                    cliente.setCorreo(rs.getString("correo")); 
                     cliente.setTelefono(rs.getString("telefono"));
-                    cliente.setCorreo(rs.getString("correo"));
-                    cliente.setCuenta(rs.getFloat("cuenta"));
+                    cliente.setDireccion(rs.getString("direccion"));
+                    cliente.setDistrito(rs.getString("distrito"));  
                     cliente.setEstado(rs.getString("estado"));
                     listaClientes.add(cliente);
             }
-
-
     }catch (Exception e) {
         e.printStackTrace();
     }finally {
@@ -193,11 +183,8 @@ public class ClienteDAO {
 	}
 	
 	public Connection getConnection(){
-        
-		Connection con = null;
-		
-        try {
-        	
+        Connection con = null;		
+        try {        	
         	Class.forName("com.mysql.jdbc.Driver").newInstance();
 			con = DriverManager.getConnection(URL);
 			
@@ -205,7 +192,7 @@ public class ClienteDAO {
 			System.out.println("ERROR conectando a la BD");
 		}
         
-		return con;
+	return con;
 	}
 	
 	

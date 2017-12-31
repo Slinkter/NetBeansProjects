@@ -1,3 +1,5 @@
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -21,67 +23,63 @@
                  Presupuesto -Vidrieria
              </h1>
              <br>
-            <form action="" class="form-horizontal">
+             <form action="prueba2" class="form-horizontal" method="post">
                 <div class="row">                      
                     <div>
                          <label for="nombre"  class="control-label col-md-2 col-lg-2">Servicio</label>
                     </div>                    
                        <div class="col-md-6 ">
-                           <select class="form-control checkbox " id="servicio">
-                            <option value="Ventana">Ventana</option>
-                            <option value="Mampara">Mampara</option>
-                            <option value="Ducha">Ducha</option>
-                            <option value="Espejo">Espejo</option>
-                            <option value="Incoloro">Incoloro (vidrio transparente)</option>
-                            <option value="Bronce">Bronce (vidrio oscuro)</option>
-                            <option value="Catedral">Catedral (vidrio diseño)</option>
+                           <select name="producto" class="form-control checkbox " id="servicio">
+                               <option value="1">Espejo</option>
+                               <option value="2">Catedral 03mm</option>
+                               <option value="0">----------------------------</option>
+                               <option value="3">Incoloro 04mm </option>
+                               <option value="4">Incoloro 06mm </option>
+                               <option value="5">Incoloro 08mm </option>
+                               <option value="6">Incoloro 10mm </option>
+                               <option value="0">----------------------------</option>
+                               <option value="7">Bronce 04mm</option>
+                               <option value="8">Bronce 06mm</option>                               
+                               <option value="9">Bronce 08mm</option>
+                               <option value="10">Bronce 10mm</option>                           
+                               <option value="0">----------------------------</option>
+                               <option value="11">Ventana Crudo Incoloro 06 mm</option>
+                               <option value="12">Ventana Crudo Incoloro 08 mm</option>
+                               <option value="13">Ventana Crudo Incoloro 10 mm</option>
+                               <option value="0">----------------------------</option>
+                               <option value="14">Ventana Templado Incoloro 06 mm</option>
+                               <option value="15">Ventana Templado Incoloro 08 mm</option>
+                               <option value="16">Ventana Templado Incoloro 10 mm</option>
+                               <option value="0">----------------------------</option>                         
+                               <option value="17">Ducha Crudo Incoloro 06 mm</option>
+                               <option value="18">Ducha Crudo Incoloro 08 mm</option>
+                               <option value="19">Ducha Crudo Incoloro 10 mm</option>
+                               <option value="Ventana">----------------------------</option>  
+                               <option value="20">Ducha Templado Incoloro 06 mm</option>
+                               <option value="21">Ducha Templado Incoloro 08 mm</option>
+                               <option value="22">Ducha Templado Incoloro 10 mm</option>
+                               <option value="0">----------------------------</option>                         
+                               <option value="23">Mampara Crudo Incoloro 06 mm</option>
+                               <option value="24">Mampara Crudo Incoloro 08 mm</option>
+                               <option value="25">Mampara Crudo Incoloro 10 mm</option>
+                               <option value="0">----------------------------</option>  
+                               <option value="26">Mampara Templado Incoloro 06 mm</option>
+                               <option value="27">Mampara Templado Incoloro 08 mm</option>
+                               <option value="28">Mampara Templado Incoloro 10 mm</option>
+                               <option value="0">----------------------------</option>  
+                               <option value="29">Puerta Templado Incoloro 06 mm</option>
+                               <option value="30">Puerta Templado Incoloro 08 mm</option>
+                               <option value="31">Puerta Templado Incoloro 10 mm</option>                                
+                               
                         </select>                    
                       </div>                    
-                </div>
-                <br><br>                
-                <div class="row">                      
-                    <div>
-                         <label for="nombre"  class="control-label col-md-2 col-lg-2">Material</label>
-                    </div>                    
-                    <div class="col-md-6 ">
-                        <select class="form-control checkbox" id="material">
-                        <option value="Crudo">Crudo</option>
-                        <option value="Templado">Templado</option>                            
-                      </select>                    
-                   </div>                    
-                </div>
-                <br><br>
-                <div class="row">                      
-                    <div>
-                        <label for="nombre"  class="control-label col-md-2 col-lg-2" >Grosor</label>
-                    </div>                    
-                    <div class="col-md-6 ">
-                      <select class="form-control checkbox" id="grosor">
-                        <option value="4"> 4 mm </option>
-                        <option value="6"> 6 mm </option>   
-                        <option value="8"> 8 mm </option>  
-                        <option value="10"> 10 mm </option>  
-                      </select>                    
-                   </div>                    
-                </div>
-                <br><br>
-                <div class="row">                      
-                    <div>
-                        <label for="nombre"  class="control-label col-md-2 col-lg-2" >Adiccional</label>
-                    </div>                    
-                    <div class="col-md-6 ">
-                      <select class="form-control checkbox" id="adiccional">
-                        <option value="Arenado"> Arenado </option>
-                        <option value="Lamina"> Lamina </option>   
-                        <option value="Normal"> Normal </option> 
-                      </select>                    
-                   </div>                    
-                </div>
+                </div>                
+              
                 <br><br>  
                  <div class="form-group has-success ">
                      <label for="Ancho"  class="control-label col-md-2 col-lg-2">Ancho</label>
                      <div class="col-md-6 col-lg-5 ">
-                         <input class="form-control " type="text" id="ancho" placeholder="Ingresar Ancho cm">
+                         <input class="form-control " type="text" name="ancho" id="ancho" placeholder="Ingresar Ancho cm">
                      </div>         
                       <label class="control-label "> cm </label>
                 </div>              
@@ -89,20 +87,23 @@
                 <div class="form-group has-error">
                     <label for="Altura" class="control-label col-md-2 col-lg-2">Altura</label>
                     <div class="col-md-6 col-lg-5">
-                        <input  class="form-control" type="text" id="altura"placeholder="Ingresar Altura">
+                        <input  class="form-control" type="text" name="altura" id="altura"placeholder="Ingresar Altura cm">
                     </div>
                     <label class="control-label "> cm </label>
                 </div>               
 
                 <div class="form-group">
                     <div class=" col-md-2 col-md-offset-2">
-                        <button  id="accion" class="btn btn-success">Calcular</button>
+                        <input type="submit"  class="btn btn-success" value="Calcular">
                     </div>
                 </div>
                 
                 <div class="form-group">
-                    <label>Resultado</label>
-                    <input id="txtResultado" type="text">
+                    <div class=" col-md-2 col-md-offset-2">
+                        <label>Resultado</label>
+                        
+                       
+                    </div>                    
 	        </div>
                 
                 

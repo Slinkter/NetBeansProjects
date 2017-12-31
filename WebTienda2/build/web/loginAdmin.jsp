@@ -13,7 +13,8 @@
         <link href="css/Login.css" rel="stylesheet" type="text/css"/>
     </head>
     <body> 
-        <div class="container" style="margin-top:40px">
+        <div class="container" style="margin-top:80px">
+            <br><br><br><br>
           <div class="row">
 			<div class="col-sm-6 col-md-4 col-md-offset-4">
 				<div class="panel panel-default">
@@ -50,6 +51,7 @@
 											<input type="hidden" value="ADMIN" name="tipo_usuario">
 										</div>
 										<input type="submit" class="btn btn-lg btn-primary btn-block" value="Ingresar">
+                                                                                <br><br><br><br><br><br><br><br>
 									</div>
 										<%if(request.getAttribute("error")!=null){%>
                                                                                 <div>Credenciales invalidas, ingresar nuevamente!</div>

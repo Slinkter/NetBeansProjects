@@ -21,19 +21,7 @@ public class test {
     public static void main(String[] args) {
         
      
-        ClienteDAO dao2 = new ClienteDAO();       
-        Cliente c4 =  new Cliente();
-        
-        c4.setNombre("juan");
-        c4.setApellido("carrasco");
-        c4.setDireccion("calle tukan");
-        c4.setDistrito("Cajamarca");
-        c4.setTelefono("5468464");
-        c4.setCorreo("carlos@cueva");
-        c4.setCuenta(100.36f);
-        c4.setEstado("deuda");
-        
-        dao2.insertarCliente(c4);
+        System.out.println(999f/9);
         
        
     }
