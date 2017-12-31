@@ -8,6 +8,7 @@ public class Producto {
     private int precio;
     private int ancho;
     private int altura;
+    private float resultado;
     
 
     public Producto() {
@@ -74,11 +75,13 @@ public class Producto {
         this.altura = altura;
     }
 
-   
-    
-            
-    
-    
-    
+    public float getResultado() {
+        return resultado;
+    }
+
+    public void setResultado(float resultado) {
+        this.resultado = resultado;
+    }
+ 
     
 }

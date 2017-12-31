@@ -39,7 +39,7 @@ public class prueba2 extends HttpServlet {
 
             System.out.println(a+" "+b+ " " +c);
             ProductoDAO productodao =  new ProductoDAO();
-            precio = productodao.Precio(a, b, c);
+            //precio = productodao.Precio(a, b, c);
                
             out.println("<h3> esto el precio :  " +precio+ "</h3>");
             out.println("</body>");
