@@ -23,7 +23,7 @@
                  Presupuesto -Vidrieria
              </h1>
              <br>
-             <form action="prueba2" class="form-horizontal" method="post">
+             <form action="Presupuesto" class="form-horizontal" method="post">
                 <div class="row">                      
                     <div>
                          <label for="nombre"  class="control-label col-md-2 col-lg-2">Servicio</label>
@@ -54,7 +54,7 @@
                                <option value="17">Ducha Crudo Incoloro 06 mm</option>
                                <option value="18">Ducha Crudo Incoloro 08 mm</option>
                                <option value="19">Ducha Crudo Incoloro 10 mm</option>
-                               <option value="Ventana">----------------------------</option>  
+                               <option value="0">----------------------------</option>  
                                <option value="20">Ducha Templado Incoloro 06 mm</option>
                                <option value="21">Ducha Templado Incoloro 08 mm</option>
                                <option value="22">Ducha Templado Incoloro 10 mm</option>

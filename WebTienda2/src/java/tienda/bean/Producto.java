@@ -1,12 +1,14 @@
 
 package tienda.bean;
 
-
 public class Producto {
     
     private int idProducto;
     private String nomProducto;
     private int precio;
+    private int ancho;
+    private int altura;
+    
 
     public Producto() {
     }
@@ -21,6 +23,16 @@ public class Producto {
         this.nomProducto = nomProducto;
         this.precio = precio;
     }
+
+    public Producto(int idProducto, String nomProducto, int precio, int ancho, int altura) {
+        this.idProducto = idProducto;
+        this.nomProducto = nomProducto;
+        this.precio = precio;
+        this.ancho = ancho;
+        this.altura = altura;
+    }
+    
+    
 
     public int getIdProducto() {
         return idProducto;
@@ -44,6 +56,22 @@ public class Producto {
 
     public void setPrecio(int precio) {
         this.precio = precio;
+    }
+
+    public int getAncho() {
+        return ancho;
+    }
+
+    public void setAncho(int ancho) {
+        this.ancho = ancho;
+    }
+
+    public int getAltura() {
+        return altura;
+    }
+
+    public void setAltura(int altura) {
+        this.altura = altura;
     }
 
    

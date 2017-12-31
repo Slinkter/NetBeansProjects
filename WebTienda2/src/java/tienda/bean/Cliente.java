@@ -10,8 +10,7 @@ public class Cliente {
     private String telefono;
     private String direccion;
     private String distrito;
-    private String estado;//<-- borra estado - observacion (100)?
-        
+    private String estado;//<-- borra estado - observacion (100)?        
           
     public Cliente() {
     }

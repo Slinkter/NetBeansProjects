@@ -27,17 +27,14 @@ public class Presupuesto extends HttpServlet {
         int b = Integer.parseInt(ancho);
         int c = Integer.parseInt(altura);
         float precio = 0 ;
-        System.out.print(a+" "+b+ " " +c);
+        System.out.print(a+"------------------------------------- "+b+ "------------------------------------ " +c);
         
         ProductoDAO productodao =  new ProductoDAO();
         precio = productodao.Precio(a, b, c);
         
-        ses.setAttribute("precio", precio);
-        
-        RequestDispatcher rd = request.getRequestDispatcher("/AdminAddPresupuesto2.jsp");        
-        rd.forward(request, response);
-        
-        
+        RequestDispatcher rd = request.getRequestDispatcher("/AdminAddPresupuesto2.jsp"); 
+        ses.setAttribute("precio", precio); 
+        rd.forward(request, response);      
         
     }
 

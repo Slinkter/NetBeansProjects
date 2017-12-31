@@ -1,6 +1,4 @@
-
 package tienda.bean;
-
 
 public class Administrador {
     

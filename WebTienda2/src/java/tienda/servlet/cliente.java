@@ -39,12 +39,8 @@ public class cliente extends HttpServlet {
             case "ELIMINAR":
                 c1.setId_cliente(id);
                 dao.remove(c1);
-                response.sendRedirect("login2");
-                
-                break;
-                     
-               
-            
+                response.sendRedirect("login2");                
+                break;  
             case "AGREGAR":
                 Cliente c2 = new Cliente();
                 c2.setNombre(request.getParameter("nombre"));
@@ -56,7 +52,7 @@ public class cliente extends HttpServlet {
                 c2.setEstado(request.getParameter("estdo"));               
                 dao.insertarCliente(c2);
                 response.sendRedirect("login2");
-                    break;               
+                break;               
             case "EDITAR":
                 
                     break;

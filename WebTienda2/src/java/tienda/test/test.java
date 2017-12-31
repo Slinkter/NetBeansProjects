@@ -21,7 +21,7 @@ public class test {
     public static void main(String[] args) {
         
      
-        System.out.println(999f/9);
+        System.out.println(130*58/900f);
         
        
     }
