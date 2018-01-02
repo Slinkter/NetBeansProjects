@@ -17,34 +17,32 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World! <%= request.getAttribute("precio")%></h1>
+       
         
-        <h1>dasdsa</h1>
+        
       
     
          <div class="container">
+             <h1>Presupuesto </h1>
+             
+             
             <div class="table-responsive">
                  <table class="table table-hover table-bordered table-condensed ">     
                      <tr>
-                            <td>Metraje</td>
+                            <td>Descripcion</td>
                             <td>ancho</td>                            
                             <td>altura</td>
-                            <td>Precio</td>
-                            <td>Descripcion</td>
+                            <td>Precio</td>                            
                      </tr>
                      
                      
                     <c:forEach var="x" items="${sessionScope.listado}">                        
                         <tr>
                             <tr>
-                            
-                            <td>${x.precio}</td>
+                            <td>${x.nomProducto}</td>                            
                             <td>${x.ancho}</td>                            
                             <td>${x.altura}</td>
-                            <td>${x.resultado}</td>
-                            <td>${x.nomProducto}</td>
-                                                      
-                       
+                            <td>${x.resultado}</td>   
                         </tr>  
                         </tr>                        
                     </c:forEach>     
