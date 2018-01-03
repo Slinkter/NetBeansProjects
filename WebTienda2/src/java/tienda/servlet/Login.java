@@ -37,7 +37,7 @@ public class Login extends HttpServlet {
                        	
             if (admin != null ){                    
                     RequestDispatcher rd = request.getRequestDispatcher("Admin.jsp");
-                    request.setAttribute("nombreAdmin", usuario);
+                    request.setAttribute("usuario", usuario);
                     rd.forward(request, response);
             }else{
                     RequestDispatcher rd = request.getRequestDispatcher("loginAdmin.jsp");

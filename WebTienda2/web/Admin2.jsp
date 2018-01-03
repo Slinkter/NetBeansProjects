@@ -28,7 +28,8 @@
         
         <div class="container">
             <div class="table-responsive">
-                 <table class="table table-hover table-bordered table-condensed ">     
+                 <table class="table table-dark"> 
+                     <thead >                     
                      <tr>
                          <td>Id</td>
                          <td>Nombre</td>
@@ -40,8 +41,8 @@
                          <td>Cuenta</td>
                          <td>Cuenta</td>
                          <td>Cuenta</td>
-
                      </tr>
+                     </thead>
                      
                      
                     <c:forEach var="x" items="${sessionScope.listado}">                        

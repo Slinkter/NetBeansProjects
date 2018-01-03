@@ -27,7 +27,7 @@
              
              
             <div class="table-responsive">
-                 <table class="table table-hover table-bordered table-condensed ">     
+                 <table class="table table-hover table-bordered table-condensed table-striped ">     
                      <tr>
                             <td>Descripcion</td>
                             <td>ancho</td>                            

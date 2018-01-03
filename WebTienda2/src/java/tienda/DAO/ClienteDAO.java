@@ -15,7 +15,29 @@ import tienda.bean.Cliente;
 
 public class ClienteDAO {
     
-    String URL = "jdbc:mysql://localhost:3306/vidrieria?user=root&password=root";
+   String  driver = "com.mysql.jdbc.Driver";
+        String  Conectar = "jdbc:mysql://127.0.0.1:3306/vidrieria";
+        String usuario = "root";
+        String password = "";
+        Connection con1 ;
+        
+        public Connection getConnection(){        
+			
+        try {
+                    	
+            Class.forName(driver).newInstance();
+	    con1 = DriverManager.getConnection(Conectar,usuario,password);
+            System.out.println("conectando a la BD");
+            //contraseña : 4qu0xGfvoZlpG7GS
+        } catch (Exception e){
+                    System.out.println("ERROR conectando a la BD");
+                    System.out.println("ERROR libreria");
+                    
+            }
+        return con1;
+
+        
+	}
 
 	public Cliente  insertarCliente(Cliente cli){	
 		
@@ -182,18 +204,7 @@ public class ClienteDAO {
 		
 	}
 	
-	public Connection getConnection(){
-        Connection con = null;		
-        try {        	
-        	Class.forName("com.mysql.jdbc.Driver").newInstance();
-			con = DriverManager.getConnection(URL);
-			
-		} catch (Exception e){
-			System.out.println("ERROR conectando a la BD");
-		}
-        
-	return con;
-	}
+	
 	
 	
 	

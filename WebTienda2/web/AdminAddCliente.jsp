@@ -12,18 +12,25 @@
 
         <div class="header">
             <div class="container">
-                <h1>Crear Cliente -Formulario</h1>
+                <h1>Crear Cliente </h1>
+                <div class="row">
+                    
+                    <div class="col-md-6 col-md-push-4"><h2>Formulario</h2></div>
+                    
+                 </div>
+                
             </div>
 
         </div>
 
         <div class="container">
+            
             <br>
             <form action="cliente"   method="POST" class="form-horizontal">
                 <input type="hidden" name="accion" value="AGREGAR">
 
                  <div class="form-group ">
-                     <label for="nombre"  class="control-label col-md-2 col-lg-2">Nombre</label>
+                     <label for="nombre"  class="control-label col-md-2 col-lg-2">Nombres</label>
                      <div class="col-md-10  col-lg-10 inputGroupContainer input-group">
 
                          <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -32,7 +39,7 @@
                 </div>
 
                 <div class="form-group ">
-                     <label for="nombre"  class="control-label col-md-2 col-lg-2">Apellido</label>
+                     <label for="nombre"  class="control-label col-md-2 col-lg-2">Apellidos</label>
                      <div class="col-md-10  col-lg-10 inputGroupContainer input-group">
                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                          <input class="form-control " type="text" name="apellido" id="nombre" placeholder="Ingresar Apellido">
@@ -47,19 +54,12 @@
                      </div>
                 </div>
                 <div class="form-group ">
-                     <label for="nombre"  class="control-label col-md-2 col-lg-2">Districto</label>
-                     <div class="col-md-10  col-lg-10 inputGroupContainer input-group">
-                       <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-                         <input class="form-control " type="text" name="districto" id="nombre" placeholder="Ingresar Districto">
-                     </div>
-                </div>
-                <div class="form-group ">
                      <label for="nombre"  class="control-label col-md-2 col-lg-2">Telefono</label>
                      <div class="col-md-10  col-lg-10 inputGroupContainer input-group">
                        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
                          <input class="form-control " type="text" name="telefono" id="nombre" placeholder="Ingresar telefono">
                      </div>
-                </div>
+                </div>                      
 
                 <div class="form-group ">
                     <label for="correo" class="control-label col-md-2 col-lg-2">Correo</label>
@@ -69,6 +69,13 @@
                     </div>
                 </div>
                 <div class="form-group ">
+                     <label for="nombre"  class="control-label col-md-2 col-lg-2">Districto</label>
+                     <div class="col-md-10  col-lg-10 inputGroupContainer input-group">
+                       <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                         <input class="form-control " type="text" name="districto" id="nombre" placeholder="Ingresar Districto">
+                     </div>
+                </div>
+                <div class="form-group ">
                      <label for="nombre"  class="control-label col-md-2 col-lg-2">cuenta</label>
                      <div class="col-md-10  col-lg-10 inputGroupContainer input-group">
                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -76,7 +83,7 @@
                      </div>
                 </div>
                 <div class="form-group ">
-                     <label for="nombre"  class="control-label col-md-2 col-lg-2">Estado</label>
+                     <label for="nombre"  class="control-label col-md-2 col-lg-2">Descripción</label>
                      <div class="col-md-10  col-lg-10 inputGroupContainer input-group">
                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                          <input class="form-control " type="text" name="estdo" id="nombre" placeholder="Ingresar estado">

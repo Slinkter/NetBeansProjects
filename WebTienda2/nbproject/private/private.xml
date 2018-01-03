@@ -3,19 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Tukamon/Documents/NetBeansProjects/WebTienda2/src/java/tienda/servlet/Presupuesto.java</file>
-            <file>file:/C:/Users/Tukamon/Documents/NetBeansProjects/WebTienda2/src/java/tienda/DAO/ProductoDAO.java</file>
-            <file>file:/C:/Users/Tukamon/Documents/NetBeansProjects/WebTienda2/src/java/tienda/test/test.java</file>
-            <file>file:/C:/Users/Tukamon/Documents/NetBeansProjects/WebTienda2/src/java/tienda/DAO/AdministradorDAO.java</file>
-            <file>file:/C:/Users/Tukamon/Documents/NetBeansProjects/WebTienda2/web/AdminAddPrespuesto.jsp</file>
-            <file>file:/C:/Users/Tukamon/Documents/NetBeansProjects/WebTienda2/src/java/tienda/servlet/login2.java</file>
-            <file>file:/C:/Users/Tukamon/Documents/NetBeansProjects/WebTienda2/web/Admin.jsp</file>
-            <file>file:/C:/Users/Tukamon/Documents/NetBeansProjects/WebTienda2/src/java/tienda/servlet/cliente.java</file>
-            <file>file:/C:/Users/Tukamon/Documents/NetBeansProjects/WebTienda2/web/AdminAddCliente.jsp</file>
-            <file>file:/C:/Users/Tukamon/Documents/NetBeansProjects/WebTienda2/web/Admin2.jsp</file>
-            <file>file:/C:/Users/Tukamon/Documents/NetBeansProjects/WebTienda2/src/java/tienda/servlet/prueba2.java</file>
-            <file>file:/C:/Users/Tukamon/Documents/NetBeansProjects/WebTienda2/src/java/tienda/bean/Administrador.java</file>
-            <file>file:/C:/Users/Tukamon/Documents/NetBeansProjects/WebTienda2/web/AdminAddPresupuesto2.jsp</file>
+            <file>file:/C:/Users/Empleado/Documents/NetBeansProjects/WebTienda2/src/java/tienda/DAO/ClienteDAO.java</file>
+            <file>file:/C:/Users/Empleado/Documents/NetBeansProjects/WebTienda2/src/java/tienda/DAO/ProductoDAO.java</file>
+            <file>file:/C:/Users/Empleado/Documents/NetBeansProjects/WebTienda2/src/java/tienda/DAO/AdministradorDAO.java</file>
         </group>
     </open-files>
 </project-private>
