@@ -21,7 +21,12 @@ public class test {
     public static void main(String[] args) {
         
      
-        System.out.println(130*58/900f);
+        
+        String s = "A0001";
+        System.out.println(s.substring(0));
+        System.out.println(s.substring(1));
+        System.out.println(s.substring(2));
+        System.out.println(s.substring(3));
         
        
     }
